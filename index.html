@@ -3,271 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Acceuil | Test Squadron</title>
+    <title>Acceuil | Test Squadron</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="core.css">
 </head>
 
 <body>
-
 <div class="page">
     <header role="banner">
-        <img src="logo.gif" alt="Logo de test squadron">
+        <img src="logo.gif" alt="Logo de Test Squadron">
         <div class="title">Test Squadron</div>
     </header>
 
-    <nav aria-label="Test Squadron">
-        <ul class="menubar-navigation" role="menubar" aria-label="Test Squadron">
-
+    <nav aria-label="Navigation principale">
+        <ul class="menubar-navigation" role="menubar" aria-label="Menu principal">
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#home"> Acceuil
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#home">Accueil
                     <svg xmlns="http://www.w3.org/2000/svg" class="down" width="12" height="9" viewBox="0 0 12 9">
                         <polygon points="1 0, 11 0, 6 8"></polygon>
                     </svg>
                 </a>
-
-                <ul role="menu" aria-label="Home">
-
+                <ul role="menu" aria-label="Sous-menu Accueil">
                     <li role="none">
                         <a role="menuitem" href="#about">Qui sommes nous ?</a>
                     </li>
-
                     <li role="none">
                         <a role="menuitem" href="#blog">Blog</a>
                     </li>
-
                 </ul>
             </li>
-
             <li role="none">
-                <a role="menuitem" href="#contact"> Contactez-nous ! </a>
+                <a role="menuitem" href="#contact">Contactez-nous !</a>
             </li>
-
         </ul>
     </nav>
 
-    <div class="main">
-
-        <div class="l-box">
-            <p> <label for="search"><span class="field-label">Rechercher </span></label> </p>
-
-            <div class="l-sidebar search">
-                <form role="search" action="" novalidate="">
-
-                    <div class="not-sidebar"><input type="search" id="search" name="q">
-                        <input type="hidden" name="ko" value="-2">
-                        <input type="hidden" name="k1" value="-1">
-                    </div>
-                    <div class="sidebar">
-                        <button class="button" type="submit" name="search">Rechercher</button>
-                    </div>
-
-                </form>
-            </div>
-        </div>
-
-        <div role="article" id="about-section" class="component component--members u-full-width" style="display: block;"
-             aria-labelledby="about-section-title">
-
+    <main class="main">
+        <section id="about-section" class="component component--members u-full-width" style="display: block;" aria-labelledby="about-section-title">
             <div class="u-full-width hero">
                 <div class="l-center l-sidebar">
                     <div>
                         <div class="not-sidebar">
-                            <h1>Bienvenue chez Test Squadron</h1>
+                            <h1 id="about-section-title">Bienvenue chez Test Squadron</h1>
                             <div class="lead"><p>Votre Partenaire en Test et Développement</p></div>
                         </div>
                         <div class="sidebar">
-                            <img src="back.jpg" alt="Test">
+                            <img src="back.jpg" alt="Image de fond représentant des tests logiciels">
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="l-center">
-                <h2>Qui sommes nous ? </h2>
-
-                <p>Depuis notre création en 2010, Test Squadron s'est engagé à fournir des services de test et de
-                    développement de qualité exceptionnelle à nos clients du monde entier. Notre équipe passionnée
-                    est composée d'experts en test et en développement, travaillant ensemble pour résoudre les défis
-                    les plus complexes de nos clients.</p>
-
-                <p>Le terme "escadron" est souvent utilisé pour désigner une unité ou une équipe militaire, ce qui peut
-                    refléter l'idée de coordination, de discipline et de stratégie dans les tests de logiciels,
-                    coordination, de discipline et de stratégie dans les tests de logiciels.</p>
-
-                <p>Test Squadron est une équipe dédiée à fournir des solutions de test et de développement de logiciels
-                    de qualité supérieure. Avec une expertise approfondie dans divers domaines, nous nous engageons à
-                    vous aider à atteindre vos objectifs de qualité et d'efficacité.</p>
-
-                <h2>Nos services : </h2>
-
+                <h2>Qui sommes nous ?</h2>
+                <p>Depuis notre création en 2010, Test Squadron s'est engagé à fournir des services de test et de développement de qualité exceptionnelle à nos clients du monde entier. Notre équipe passionnée est composée d'experts en test et en développement, travaillant ensemble pour résoudre les défis les plus complexes de nos clients.</p>
+                <p>Le terme "escadron" est souvent utilisé pour désigner une unité ou une équipe militaire, ce qui peut refléter l'idée de coordination, de discipline et de stratégie dans les tests de logiciels.</p>
+                <p>Test Squadron est une équipe dédiée à fournir des solutions de test et de développement de logiciels de qualité supérieure. Avec une expertise approfondie dans divers domaines, nous nous engageons à vous aider à atteindre vos objectifs de qualité et d'efficacité.</p>
+                <h2>Nos services :</h2>
                 <ul>
                     <li>Testing Automatisé</li>
                     <li>Testing Manuelle</li>
-                    <li>Consultation en Développement.</li>
+                    <li>Consultation en Développement</li>
                 </ul>
-
                 <p>N'attendez plus, pour discuter de vos besoins en matière de test et de développement.</p>
-
                 <div class="l-cluster component--members__cta">
-                    <div><a class="button" href="#contact"> Contactez-nous !</a></div>
+                    <div><a class="button" href="#contact">Contactez-nous !</a></div>
                 </div>
-
             </div>
-        </div>
+        </section>
 
-        <div role="article" id="blog-section" class="component component--members u-full-width" style="display: none;"
-             aria-labelledby="blog-section-title">
-
+        <section id="blog-section" class="component component--members u-full-width" style="display: none;" aria-labelledby="blog-section-title">
             <div class="l-center">
-                <h2>Blog</h2>
-
+                <h2 id="blog-section-title">Blog</h2>
                 <div class="post-list">
-
-                    <div class="l-sidebar">
-
+                    <article class="l-sidebar">
                         <div class="not-sidebar">
                             <div>
-                                <h2 class="txt-mars"> Les tendances en matière de test logiciel pour 2024</h2>
+                                <h3 class="txt-mars">Les tendances en matière de test logiciel pour 2024</h3>
                                 <div class="l-cluster">
                                     <div>
                                         <p><span class="visuallyhidden">Published:</span>
-                                            <time datetime="2024-05-16">
-                                                16 May 2024
-                                            </time>
+                                            <time datetime="2024-05-16">16 mai 2024</time>
                                         </p>
-
                                     </div>
                                 </div>
-                                <p>Découvrez les dernières tendances en matière de test logiciel qui façonnent
-                                    l'industrie en 2024. Des méthodologies Agile aux outils d'automatisation de
-                                    pointe, explorez ce que l'avenir nous réserve en matière de qualité logicielle.</p>
+                                <p>Découvrez les dernières tendances en matière de test logiciel qui façonnent l'industrie en 2024. Des méthodologies Agile aux outils d'automatisation de pointe, explorez ce que l'avenir nous réserve en matière de qualité logicielle.</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="l-sidebar">
-
+                    </article>
+                    <article class="l-sidebar">
                         <div class="not-sidebar">
                             <div>
-                                <h2 class="txt-mars">Les meilleures pratiques pour une stratégie de test réussie</h2>
+                                <h3 class="txt-mars">Les meilleures pratiques pour une stratégie de test réussie</h3>
                                 <div class="l-cluster">
                                     <div>
                                         <p><span class="visuallyhidden">Published:</span>
-                                            <time datetime="2024-04-20">
-                                                20 avril 2024
-                                            </time>
+                                            <time datetime="2024-04-20">20 avril 2024</time>
                                         </p>
-
                                     </div>
                                 </div>
-                                <p>Dans cet article, nous partageons les meilleures pratiques pour élaborer une
-                                    stratégie de test efficace. De l'identification des exigences aux tests
-                                    d'acceptation utilisateur, découvrez comment garantir la qualité de votre produit
-                                    logiciel à chaque étape du processus de développement.</p>
+                                <p>Dans cet article, nous partageons les meilleures pratiques pour élaborer une stratégie de test efficace. De l'identification des exigences aux tests d'acceptation utilisateur, découvrez comment garantir la qualité de votre produit logiciel à chaque étape du processus de développement.</p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="l-sidebar">
-
+                    </article>
+                    <article class="l-sidebar">
                         <div class="not-sidebar">
                             <div>
-                                <h2 class="txt-mars"> L'importance de l'intégration continue dans le développement
-                                    logiciel</h2>
+                                <h3 class="txt-mars">L'importance de l'intégration continue dans le développement logiciel</h3>
                                 <div class="l-cluster">
                                     <div>
                                         <p><span class="visuallyhidden">Published:</span>
-                                            <time datetime="2023-05-05">
-                                                5 mai 2023
-                                            </time>
+                                            <time datetime="2023-05-05">5 mai 2023</time>
                                         </p>
-
                                     </div>
                                 </div>
-                                <p>L'intégration continue est devenue un élément essentiel du processus de développement
-                                    logiciel moderne. Cet article explore les avantages de l'intégration continue,
-                                    notamment une meilleure qualité du code, une réduction des risques et une
-                                    accélération du cycle de développement. Découvrez comment l'adoption de
-                                    l'intégration continue peut transformer votre processus de développement.</p>
+                                <p>L'intégration continue est devenue un élément essentiel du processus de développement logiciel moderne. Cet article explore les avantages de l'intégration continue, notamment une meilleure qualité du code, une réduction des risques et une accélération du cycle de développement. Découvrez comment l'adoption de l'intégration continue peut transformer votre processus de développement.</p>
                             </div>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
-
             </div>
-        </div>
+        </section>
 
-        <div role="article" id="contact-section" class="component component--members u-full-width" style="display: none;"
-             aria-labelledby="contact-section-title">
-
+        <section id="contact-section" class="component component--members u-full-width" style="display: none;" aria-labelledby="contact-section-title">
             <div class="l-center">
-
-                <h2>Contact</h2>
-
-                <form name="form" id="contactForm" method="post" novalidate="novalidate">
-
+                <h2 id="contact-section-title">Contact</h2>
+                <form name="form" id="contactForm" method="post" novalidate>
                     <div class="field">
                         <label for="nom">
                             <span class="field-label">Nom <span class="required">(Obligatoire)</span></span>
                         </label>
                         <input type="text" id="nom" name="nom" required aria-required="true">
-                        <span style="display: none;" class="error" id="error-nom">Ce champ est obligatoire.</span>
+                        <span class="error" id="error-nom" aria-live="assertive" style="display: none;">Ce champ est obligatoire.</span>
                     </div>
-
                     <div class="field">
                         <label for="prenom">
                             <span class="field-label">Prénom <span class="required">(Obligatoire)</span></span>
                         </label>
                         <input type="text" id="prenom" name="prenom" required aria-required="true">
-                        <span style="display: none;" class="error" id="error-prenom">Ce champ est obligatoire.</span>
+                        <span class="error" id="error-prenom" aria-live="assertive" style="display: none;">Ce champ est obligatoire.</span>
                     </div>
-
                     <div class="field-group">
-
-                        <span class="field-label">Adresse </span>
-
+                        <span class="field-label">Adresse</span>
                         <div class="group">
-
                             <div class="field">
                                 <label for="rue">
-                                    <span class="field-label">N° et Rue </span>
+                                    <span class="field-label">N° et Rue</span>
                                 </label>
                                 <input type="text" id="rue" name="rue">
                             </div>
-
                             <div class="field">
                                 <label for="code_postal">
-                                    <span class="field-label">Code Postal </span>
+                                    <span class="field-label">Code Postal</span>
                                 </label>
                                 <input type="text" id="code_postal" name="code_postal">
                             </div>
-
                             <div class="field">
                                 <label for="ville">
-                                    <span class="field-label">Ville </span>
+                                    <span class="field-label">Ville</span>
                                 </label>
                                 <input type="text" id="ville" name="ville">
                             </div>
-
                         </div>
                     </div>
-
                     <div class="field">
                         <label for="tel">
-                            <span class="field-label">Téléphone </span>
+                            <span class="field-label">Téléphone</span>
                         </label>
                         <input type="tel" id="tel" name="tel">
                     </div>
-
                     <button type="submit" class="button">Valider</button>
                 </form>
-
             </div>
-        </div>
-
-    </div>
+        </section>
+    </main>
 
     <footer role="contentinfo">
         <p>Plan du site - Informations juridiques - © 2024 Test Squadron</p>
